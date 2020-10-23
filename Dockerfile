@@ -1,6 +1,6 @@
 FROM alpine:edge
 
-LABEL Maintainer="Jean-Paul Duyx | github.com/jpduyx" \
+LABEL Maintainer="Lars Hemala | github.com/lhemala" \
       Description="Lightweight ansible container as drone.io plugin with apache_libcloud based on Alpine Linux."
 
 # Install packages

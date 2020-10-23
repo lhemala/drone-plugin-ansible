@@ -8,7 +8,7 @@ an ansible container to be used as drone.io cicd pipeline plugin for testing ans
 
     pipeline:
       test-ansible-playbook:
-        image: jpduyx/drone-plugin-ansible:latest
+        image: lhemala/drone-plugin-ansible:latest
         commands:
         - cd tst
         - chmod -R 0600 keys/id_rsa*
@@ -18,10 +18,10 @@ an ansible container to be used as drone.io cicd pipeline plugin for testing ans
 ## example manual usage
 With this command you enter the container and you'll find your playbook mounted in /ansible/playbooks
 
-  docker run --rm -it -v /absolute/path/to/playbook/folder:/ansible/playbooks jpduyx/drone-plugin-ansible /bin/sh
+  docker run --rm -it -v /absolute/path/to/playbook/folder:/ansible/playbooks lhemala/drone-plugin-ansible /bin/sh
 
   
   
 # Docker Hub: 
 
-https://hub.docker.com/r/jpduyx/drone-plugin-ansible
+https://hub.docker.com/r/lhemala/drone-plugin-ansible
