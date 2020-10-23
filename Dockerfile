@@ -1,9 +1,7 @@
-FROM alpine:edge
+FROM alpine:3.12
 
 LABEL Maintainer="Lars Hemala | github.com/lhemala" \
       Description="Lightweight ansible container as drone.io plugin with apache_libcloud based on Alpine Linux."
-
-# Install packages
 
 RUN apk update && \
       apk --no-cache add ansible openssh-client  && \
